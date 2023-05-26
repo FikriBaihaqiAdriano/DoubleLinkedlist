@@ -14,7 +14,7 @@ class DoubleLinkedList {
 private:
 	Node* START = NULL;
 public:
-
+	DoubleLinkedList();
 	void addNode();
 	bool search(int rollNo, Node** previous, Node** current);
 	bool deleteNode(int rollNo);
@@ -25,6 +25,10 @@ public:
 	void searchData();
 };
 
+DoubleLinkedList::DoubleLinkedList() {
+	START = NULL;
+}
+
 void DoubleLinkedList::addNode() {
 	int nim;
 	string nm;
@@ -32,4 +36,5 @@ void DoubleLinkedList::addNode() {
 	cin >> nim;
 	cout << "\nEnter the name of the student: ";
 	cin >> nm;
-}
+	Node* newNode = new Node(); //step 1
+	
