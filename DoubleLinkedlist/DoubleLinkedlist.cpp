@@ -185,6 +185,7 @@ int main() {
 			cin >> ch;
 
 			switch (ch) {
+				..
 			case '1':
 				obj.addNode();
 				break;
@@ -206,6 +207,9 @@ int main() {
 				cout << "n\Invalid option" << endl;
 				break;
 			}
+		}
+		catch (exception& e) {
+			cout << "Check for the values entered." << endl;
 		}
 	}
 }
